@@ -272,7 +272,7 @@ cp nanopi3_linux_defconfig gec6818_linux_defconfig
 
 `gec6818_linux_defconfig` 是 GEC6818 的板级内核配置文件，后续可以在这里裁剪或打开驱动选项。
 
-### 9.4 新增 GEC6818 DTS / DTSI
+### 9.4 新增 GEC6818 DTS / DTSI （不想整下面的就直接去Release里下载v0.1.0-dts-bringup）
 
 进入设备树目录：
 
