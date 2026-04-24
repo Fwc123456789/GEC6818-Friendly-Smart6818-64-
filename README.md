@@ -157,4 +157,18 @@ make ARCH=arm64　
 或者指定8线程编译（最好你的电脑满足　你也可以拉满　这样不用等很久）　
 make ARCH=arm64 -j 8
 
+### 3.6编译产物
+编译完成之后 产物就是5-Linux-4.4.172-gec\arch\arm64\boot\dts\nexell下的s5p6818-gec6818-rev01.dtb
+和5-Linux-4.4.172-gec\arch\arm64\boot下的image文件
+把这两个文件通过DiskGenius替换原boot分区下面的image文件和s5p6818-gec6818-rev01.dtb即可！
+最后上电！抓取日志！
+<img width="1143" height="385" alt="SnowShot_2026-04-24_17-33-59" src="https://github.com/user-attachments/assets/6901c7c3-2c7c-4a53-ad23-f471b1ff0475" />
+然后就可以娱乐的开发了
+
+# 三　很多BUG
+发现uboot的lcd分辨率不正确 导致显示错位 可以改一个分辨率
+7-u-boot_gec6818-gec6818-v2016.01\board\s5p6818\gec6818\lcd.s这个文件
+找到默认显示的显示面板（可以问ai）我这里是AT070TN92 把这个分辨率改到800*480就和我板子上的7寸lcd对上了
+
+暂时写到这里 笔者要去运动了！
 
